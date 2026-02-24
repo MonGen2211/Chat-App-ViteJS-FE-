@@ -44,7 +44,6 @@ const MessageInput = () => {
         image: imagePreview,
       });
 
-      // clear Form
       setText("");
       setImagePreview(null);
       if (fileInputRef.current) fileInputRef.current.value = "";

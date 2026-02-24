@@ -29,7 +29,7 @@ export const useChatStore = create((set, get) => ({
     if (!id) return;
     set({ isMessagesLoading: true });
     try {
-      // http://localhost:2211/api/message/67e13197f59bce1373de508a
+      // chat-app-be-js-production.up.railway.app/api/message/67e13197f59bce1373de508a
       const url = selectedGroup?._id ? `/group/${id}` : `/message/${id}`;
       const res = await axiosInstance.get(url);
       set({ messages: res.data });

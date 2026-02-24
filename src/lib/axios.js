@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:2211/api",
+  baseURL: "chat-app-be-js-production.up.railway.app/api",
   withCredentials: true, // Để gửi cookie nếu có
 });
